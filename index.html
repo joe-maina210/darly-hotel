@@ -5,117 +5,89 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Darly's Hotel</title>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <header class="navbar">
-    <nav>
-      <ul class="nav-left">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">About</a></li>
-      </ul>
-        <div class="nav-center">
-         <h1> Darly's Hotel</h1>
-        </div>
-      <ul class="nav-right">
-        <li><a href="#rooms">Rooms</a></li>
-        <li><a href="#facilities">Facilities</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+  <header>
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#rooms">Rooms</a>
+      <a href="#facilities">Facilities</a>
+      <a href="#accessibility">Accessibility</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <section class="hero" id="home">
-    <h1>Welcome to Darly's Hotel</h1>
-    <p>Your cozy escape where elegance meets comfort.</p>
-    <button>Book a Room</button>
+    <div class="logo">Darly's Hotel</div>
+    <p>Experience luxury, comfort, and unforgettable memories</p>
+    <button>Book Now</button>
   </section>
 
-  <section class="intro" id="about">
-    <div class="intro-text">
-      <h2>About Us</h2>
-      <p>Darly's Hotel offers a tranquil getaway with modern elegance and personal comfort. Located in the heart of the city, we provide peaceful surroundings and attentive service for travelers seeking luxury and relaxation.</p>
-      <button>Learn More</button>
-    </div>
-    <div class="intro-img"></div>
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We are dedicated to making your stay relaxing and romantic.</p>
   </section>
 
-  <section class="features" id="rooms">
+  <section id="rooms">
     <h2>Our Rooms</h2>
-    <div class="cards">
-      <div class="card">
+    <div class="rooms">
+      <div class="room">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Deluxe Room" />
         <h3>Deluxe Room</h3>
-        <p>Comfortable and elegant with a stunning view.</p>
-        <button>View</button>
       </div>
-      <div class="card">
+      <div class="room">
+        <img src="https://images.unsplash.com/photo-1590490350339-eedb2961c1b9?auto=format&fit=crop&w=800&q=80" alt="Executive Suite" />
         <h3>Executive Suite</h3>
-        <p>Spacious luxury with premium amenities.</p>
-        <button>View</button>
       </div>
-      <div class="card">
+      <div class="room">
+        <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f54?auto=format&fit=crop&w=800&q=80" alt="Presidential Suite" />
         <h3>Presidential Suite</h3>
-        <p>The ultimate experience in lavish accommodation.</p>
-        <button>View</button>
       </div>
     </div>
   </section>
 
-  <section class="testimonials" id="facilities">
-    <h2>What Our Guests Say</h2>
-    <div class="testimonial">
-      <p>"Everything was perfect! The staff was so friendly and the rooms were incredibly clean and beautiful."</p>
-      <strong>- Aisha T.</strong>
-    </div>
-    <div class="testimonial dark">
-      <p>"Absolutely loved the stay! Peaceful atmosphere and amazing food. Highly recommended."</p>
-      <strong>- Daniel R.</strong>
-    </div>
-  </section>
-
-  <section class="resources">
+  <section id="facilities">
     <h2>Facilities</h2>
-    <div class="resource-list">
-      <div class="resource">
-        <h3>Infinity Pool</h3>
-        <p>Relax in our rooftop pool with skyline views.</p>
-      </div>
-      <div class="resource">
-        <h3>Spa & Wellness</h3>
-        <p>Unwind with premium spa treatments and massages.</p>
-      </div>
-      <div class="resource">
-        <h3>Gourmet Dining</h3>
-        <p>Enjoy cuisine from top chefs in our restaurant.</p>
-      </div>
+    <p>Enjoy our pool, spa, gym, and romantic rooftop dinners.</p>
+  </section>
+
+  <section id="testimonials">
+    <h2>Testimonials</h2>
+    <div class="testimonial">"A perfect stay! – Sarah"</div>
+    <div class="testimonial">"Amazing service and beautiful rooms. – Alex"</div>
+    <div class="testimonial">"I'll definitely return with my partner. – Maria"</div>
+  </section>
+
+  <section id="faq" class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <div class="faq-question">What time is check-in?</div>
+      <div class="faq-answer">Check-in is from 2:00 PM.</div>
     </div>
   </section>
 
-  <section class="faq">
-    <h2>FAQ</h2>
-    <ul>
-      <li><strong>What time is check-in?</strong> - From 2:00 PM onwards.</li>
-      <li><strong>Do you offer airport transfers?</strong> - Yes, available upon request.</li>
-      <li><strong>Is breakfast included?</strong> - Yes, complimentary for all guests.</li>
-    </ul>
+  <section id="partners">
+    <h2>Our Partners</h2>
+    <div class="partners">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Airbnb_Logo_Bélo.svg/2560px-Airbnb_Logo_Bélo.svg.png" alt="Airbnb" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Booking.com_logo.svg/2560px-Booking.com_logo.svg.png" alt="Booking.com" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/Expedia_Logo_2021.svg" alt="Expedia" />
+    </div>
   </section>
 
-  <section class="contact" id="contact">
+  <section id="accessibility">
+    <h2>Accessibility</h2>
+    <p>We offer wheelchair access, accessible rooms, and services for all our guests.</p>
+  </section>
+
+  <section id="contact">
     <h2>Contact Us</h2>
-    <div class="contact-box">
-      <div class="details">
-        <p>Email: contact@darlyshotel.com</p>
-        <p>Phone: +123-456-7890</p>
-        <p>Address: 123 Luxury Lane, Bliss City</p>
-      </div>
-      <form class="contact-form">
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea rows="4" placeholder="Your Message"></textarea>
-        <button type="submit">Send Message</button>
-      </form>
+    <p>Email: contact@darlyshotel.com | Phone: +123-456-7890</p>
+    <div class="social-media">
+      <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a>
     </div>
   </section>
 
