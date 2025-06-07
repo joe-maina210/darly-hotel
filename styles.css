@@ -19,25 +19,36 @@ body {
 .nav-right {
   display: flex;
   gap: 20px;
+  flex: 1;
+}
+.nav-left{
+  justify-content: flex-start;
 }
 
+.nav-right{
+  justify-content: flex-end;
+}
 .navbar-left a,
 .nav-right a {
   text-decoration: none;
   color: #333;
   font-weight: 500;
   font-size: 16px;
+  transition: color 0.3s;
 }
-.nav-center {
+.navbar-left a:hoover ,
+.nav-right a:hoover {
+  color: #0077cc;
+
+.nav-logo {
   position: absolute;
   left:50%;
   transform:translateX(-50%);
-}
-.navbar center h1 {
-  font-size: 20px;
-  margin:0;
-  color: #000;
+  font-size: 20 px;
   font-weight: bold;
+  color: #000;
+  white-space: nowrap;
+  z-index:1;
 }
 
 .hero {
