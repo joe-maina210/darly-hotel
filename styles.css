@@ -15,32 +15,29 @@ body {
   position: relative;
 }
 
-.navbar-left ,
-.nav-right {
+.navbar-side {
   display: flex;
+  list-style: none;
   gap: 20px;
+  paddind: o;
+  margin: 0;
 }
 
-.navbar-left a,
-.nav-right a {
+.navbar-side a {
   text-decoration: none;
   color: #333;
   font-size: 16px;
+  font-weight: 500;
 }
-
-.navbar-left a:hoover ,
-.nav-right a:hoover {
-  color: #0077cc;
 
 .nav-logo {
   position: absolute;
-  left:50%;
+  left: 50%;
   transform:translateX(-50%);
   font-size: 20 px;
   font-weight: bold;
   color: #000;
   white-space: nowrap;
-  z-index:1;
 }
 
 .hero {
